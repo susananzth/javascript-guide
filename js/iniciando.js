@@ -39,3 +39,60 @@ saludo();
 /* ==== Constantes ==== */
 
 const pi = 3.1416;
+
+/* ==== Datos específicos ==== */
+
+/* Número */
+var edad = 28;
+var cantidad = "100";
+
+// Convertir de texto a número Number()
+var converCantidad = Number(cantidad);
+// Convertir de datos a entero: parseInt()
+// Convertir de datos a decimal: parseFloat()
+
+/* Cadenas de textos */
+var bebida = "Milkshake";
+var comida = 'Pasticho'; 
+var instruccion = "El platillo de llama: Pasticho";
+
+// Convertir texto a número String()
+var monto = "8";
+var montoNumber = String(monto);
+
+/* Booleanos */
+var activo = false;
+var estado = Boolean(10 < 9);
+
+/* Fechas */
+var fecha = new Date();
+// Algunos métodos
+
+/* Métodos'set' para crear operaciones de fechas guardadas.
+
+fecha.getDate();
+fecha.getHours(); */
+
+/* Metodo get para obtener una parte o todo o darle un formato en específico de una fecha precargada
+
+fecha.setDate(5); */
+
+/* Símbolos */
+var simbolo1 = Symbol();
+
+/* JSON */
+var persona = {firstname: 'Susana', twitter: 'susananzth'};
+
+var personas = [
+    {firstname: 'Ana', twitter: 'anastasia'},
+    {firstname: 'pedro', twitter: 'pedroso'},
+    {firstname: 'Julia', twitter: 'DeJulia'},
+    persona
+];
+
+// Para guardar esos datos y enviarlos a algun lugar...
+// Se utiliza el objeto stringify() que combierte todo el contenido en una cadena de texto.
+var personaJSON = JSON.stringify(persona);
+
+// Recuperar esa info en algo convirtiendola de texto a JSON
+var nuevaPersona = JSON.parse(personaJSON);
