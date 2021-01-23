@@ -96,3 +96,82 @@ var personaJSON = JSON.stringify(persona);
 
 // Recuperar esa info en algo convirtiendola de texto a JSON
 var nuevaPersona = JSON.parse(personaJSON);
+
+/* Operadores aritméticos */
+
+var dato1 = 5;
+var dato2 = 8;
+
+// Suma
+var suma = dato1 + dato2;
+// Resta
+var resta = dato2 - dato1;
+// Multiplicación
+var multi = dato1 * dato2;
+// División
+var division = dato2 / dato1;
+// Residuo
+var residuo = dato2 % dato1;
+// Incremento
+var incremento = dato1++;
+// Decremento
+var decremento = dato2--;
+
+// Operador negativo
+var datoNegativo = -dato1;
+
+/* Operadores relacionales */
+
+// Mayor que
+var mayorQue = dato1 > dato2;
+// Menor que
+var menorQue = dato1 < dato2;
+// Mayor o igual que
+var mayorIgualQue = dato1 >= dato2;
+// Menor o igual que
+var menorIgualQue = dato1 <= dato2;
+// Igual que
+var igualQue = dato1 == dato2;
+// Diferente que
+var diferenteQue = dato1 != dato2;
+
+/* Operadores lógicos */
+
+// Y / AND
+var and = (dato1 > 4 && dato2 > 10);
+// O / OR
+var or = (dato1 > 4 || dato2 > 10);
+// No / NOT
+var not = !(dato1 > 5);
+
+/* Operadores de asignación */
+
+// Asignación simple
+var asigna = 10;
+// Sumar y asignar
+var sumAsigna = 1;
+sumAsigna += dato1;
+// Restar y asignar
+var restAsigna = 1
+restAsigna -= dato2;
+// Multiplicar y asignar
+var multiAsigna = 1
+multiAsigna *= dato2;
+// Divide y asignar
+var diviAsigna = 1;
+diviAsigna /= dato1;
+
+/* Concatenación */
+console.log("Esto es un texto concatenado con los datos: "+ dato1);
+
+/* Operador Ternario o condicional */
+
+// Condición ? TRUE : FALSE
+var resultado = dato1 > dato2 ? "Sí es mayor" : "No es mayor";
+console.log(resultado);
+
+/* Operador de tipo de datos */
+console.log(typeof dato2);
+console.log(typeof persona);
+console.log(typeof nombre);
+console.log(typeof persona.twitter);
