@@ -82,7 +82,7 @@ var temporizador = setInterval(function () {
 
 function setColor() {
   var pagina = document.body;
-  pagina.style.backgroundColor = pagina.style.backgroundColor == "blue" ? "green" : "blue";
+  pagina.style.backgroundColor = pagina.style.backgroundColor == "mistyrose" ? "pink" : "mistyrose";
 }
 
 function stopChangeColor() {
