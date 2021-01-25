@@ -30,6 +30,9 @@
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#events">Eventos</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#array">Arreglos</a>
+                </li>
                 </ul>
             </div>
         </div>
@@ -43,24 +46,24 @@
     </header>
     <aside></aside>
     <section id="events">
-        <div class="container py-5">
+        <div class="container py-5 bg-white">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2>Eventos con el mause en Javascript</h2>
                     <p class="lead">Eventos de los botones que reaccionan con el mause.
                         <br> Abrir la consola antes de interactuar con los botones.
                     </p>
-                    <div class="border border-info rounded my-2 py-5 text-center">
+                    <div class="border border-info rounded my-2 py-5 text-center bg-light">
                         <button class="btn btn-info btn-lg btn-block boton-clic">
                             Da click en este botón
                         </button>
                     </div>
-                    <div class="border border-info rounded my-2 py-5 text-center">
+                    <div class="border border-info rounded my-2 py-5 text-center bg-light">
                         <button class="btn btn-info btn-lg btn-block boton-over">
                             Mueve el cursor al botón y luego sácalo
                         </button>
                     </div>
-                    <div class="border border-info rounded my-2 py-5 text-center">
+                    <div class="border border-info rounded my-2 py-5 text-center bg-light">
                         <button class="btn btn-info btn-lg btn-block boton-out">
                             Mueve el cursor al botón y luego sácalo
                         </button>
@@ -71,7 +74,7 @@
                     <p class="lead">Eventos que indican cuando el usuario ha pausado, buscado o finalizado el vídeo.
                         <br> Abrir la consola antes de interactuar con los botones del vídeo.
                     </p>
-                    <div class="border border-info rounded my-2 py-5 text-center">
+                    <div class="border border-info rounded my-2 py-5 text-center bg-light">
                         <video class="bostonVideo" width="500" controls>
                             <source src="src/boston.mp4" type="video/mp4">
                         </video>
@@ -81,7 +84,7 @@
         </div>
     </section>
     <section id="array">
-        <div class="container py-5">
+        <div class="container py-5 bg-white">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2>Trabajando con arreglos</h2>
@@ -90,6 +93,56 @@
                         <p>Pizza</p>
                         <p>Pasticho</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="array">
+        <div class="container py-5 bg-white">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="title">Usando el DOM y BOM</h2>
+                    <div class="border border-info rounded my-2 py-5 text-center bg-light">
+                        <button id="boton" class="btn btn-info btn-lg btn-block boton-out">
+                            Púlsame! Botón 1
+                        </button>
+                    </div>
+                    <div class="border border-info rounded my-2 py-5 text-center bg-light">
+                        <button id="boton2" class="btn btn-info btn-lg btn-block boton-out">
+                            Púlsame! Botón 2
+                        </button>
+                    </div>
+                    <div class="border border-info rounded my-2 py-5 text-center bg-light">
+                        <button id="boton3" class="btn btn-info btn-lg btn-block boton-out">
+                            Púlsame! Botón 3
+                        </button>
+                    </div>
+                    <div class="border border-info rounded my-2 py-5 text-center bg-light">
+                        <button id="boton4" class="btn btn-info btn-lg btn-block boton-out">
+                            Púlsame! Botón 4
+                        </button>
+                    </div>
+                    <p class="principal rounded border py-2 px-2 bg-light">
+                        Parrafo 1 <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sapien nulla, tincidunt nec ante
+                        ut, porta tempus dui. Integer consequat rhoncus tempus. Etiam nulla nisl, mattis a nisl pulvinar, tempor elementum
+                        lectus. Morbi sed tortor luctus, faucibus dolor eu, ullamcorper arcu. Aenean condimentum quis nisi et malesuada.
+                        Morbi nec mi et turpis condimentum suscipit quis vel arcu. Vestibulum at mi vitae urna gravida consectetur. Nam
+                        suscipit ac purus a bibendum.
+                    </p>
+                    <p class="rounded border py-2 px-2 bg-light">
+                        Parrafo 2 <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sapien nulla, tincidunt nec ante
+                        ut, porta tempus dui. Integer consequat rhoncus tempus. Etiam nulla nisl, mattis a nisl pulvinar, tempor elementum
+                        lectus. Morbi sed tortor luctus, faucibus dolor eu, ullamcorper arcu. Aenean condimentum quis nisi et malesuada.
+                        Morbi nec mi et turpis condimentum suscipit quis vel arcu. Vestibulum at mi vitae urna gravida consectetur. Nam
+                        suscipit ac purus a bibendum.
+                    </p>
+                    <p class="rounded border py-2 px-2 bg-light">
+                        Parrafo 3 <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sapien nulla, tincidunt nec ante
+                        ut, porta tempus dui. Integer consequat rhoncus tempus. Etiam nulla nisl, mattis a nisl pulvinar, tempor elementum
+                        lectus. Morbi sed tortor luctus, faucibus dolor eu, ullamcorper arcu. Aenean condimentum quis nisi et malesuada.
+                        Morbi nec mi et turpis condimentum suscipit quis vel arcu. Vestibulum at mi vitae urna gravida consectetur. Nam
+                        suscipit ac purus a bibendum.
+                    </p>
                 </div>
             </div>
         </div>
@@ -107,5 +160,6 @@
     <script src="js/alertas.js"></script>
     <script src="js/arreglos.js"></script>
     <script src="js/ciclos-arreglos.js"></script>
+    <script src="js/dom-bom.js"></script>
 </body>
 </html>
