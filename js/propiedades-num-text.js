@@ -91,3 +91,72 @@ console.log(resultado);
 resultado = mensaje.includes("Estoy", 6);
 
 console.log(resultado);
+
+//********************************
+//*** Métodos de generación, reemplazo y separación
+var mensaje500 = "      Estoy aprendiendo JavaScript        ";
+
+var resultado500;
+
+// repeat, repetir la variable n cantidad de veces
+// resultado500 = mensaje500.repeat(200);
+
+// replace, busca la cadena de texto y la reemplace.
+//resultado500 = mensaje500.replace("JavaScript", "a programar");
+
+
+// slice,  muestra a partir de la posición indicada. Parecido al subtr
+// resultado500 = mensaje500.slice(6);
+// resultado500 = mensaje500.slice(6, 11)
+
+
+// split,  envia la informacion en forma de arreglo.
+// resultado500 = mensaje500.split(" ");
+
+// trim, Elimina los espacios en blanco de la cadena.
+resultado500 = mensaje500.trim();
+
+console.log(resultado500);
+
+
+//********************************
+//*** Métodos de transformación
+var mensaje600 = "Estoy aprendiendo JavaScript";
+var mensaje700 = " y programación";
+var total = 123456;
+
+var resultado600;
+
+// Convertir valor a string
+// resultado600 = total.toString();
+
+// Convertir texto a minúscula
+// resultado600 = mensaje600.toLowerCase();
+
+// Convertir texto a mayúscula
+// resultado600 = mensaje600.toUpperCase();
+
+// Otra forma de concatenar concat()
+resultado600 = mensaje600.concat(mensaje700, ' y tengo muchas ideas', ' 123', ' 123', ' 123', ' 123', ' 123', ' 123', ' 123');
+
+console.log(resultado600);
+
+//********************************
+//*** Plantillas y literales
+var lenguaje = 'JavaScript';
+
+var lenguaje2 = 'HTML';
+
+// Comillas especiales o backticks para concetenar variables dentro del string
+var mensaje800 = `Me gusta ${lenguaje} y su integración con ${lenguaje2}`;
+
+console.log(mensaje800);
+
+//---- Mensaje multilinea
+var mensajeMultilinea = `
+    Hola mundo,
+	estoy aprendiendo
+	${lenguaje} y me gusta
+	como se integra con HTML y CSS`;
+
+console.log(mensajeMultilinea);
