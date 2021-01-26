@@ -13,8 +13,8 @@ boton_api.addEventListener('click', function () {
     .then(data => data.json())// preformatear la data en un data.json
     .then(data => { // Acceder a la información
         posts = data; // Guardo la data en posts
-        mostrarDatos(posts)
-    })
+        mostrarDatos(posts);
+    });
 
 });
 
@@ -58,7 +58,14 @@ botonapi2.addEventListener('click', function () {
         .then(countries => {
             // Se muestran los contries
             mostrarBanderas(countries);
-        });
+        })
+        .catch(error => {
+            // Mostrar el mensaje con toggle()
+            mensajes.classList.toggle('d-none');
+            mensajes.innerHTML = error;
+            // Ocurlo el mensaje despues de 6000 milisegundos
+            setTimeout(() => mensajes.classList.toggle('d-none'), 6000);
+       });
 
 });
 
@@ -80,7 +87,7 @@ function mostrarBanderas(countries) {
         bandera.width = '20';
         bandera.height = '20';
         contBanderas.appendChild(bandera);
-    })
+    });
 }
 
 function mostrarDatos(posts) {
@@ -94,5 +101,5 @@ function mostrarDatos(posts) {
 
         contenedor2.appendChild(titulo);
         contenedor2.appendChild(contenido);
-    })
+    });
 }
