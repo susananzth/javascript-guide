@@ -93,3 +93,17 @@ console.log('Reversa de nuevo: ', platillos);
 
 var [platillo1, platillo2, platillo3, platillo4] = platillos;
 console.log(platillo1, platillo2, platillo3, platillo4)
+
+/*  join  */
+// para unificar elementos de un arreglo, Mucho más eficas
+var animales = ["perro", "gato", "pez"];
+
+var listaAnimales = animales.join(", ");
+// Ver otro método
+var nuevaLista = animales.concat(",");
+
+console.log(listaAnimales);
+console.log(typeof listaAnimales);
+
+console.log(nuevaLista);
+console.log(typeof nuevaLista);
