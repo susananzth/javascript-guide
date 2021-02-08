@@ -1,0 +1,26 @@
+{
+  "name": "javascript-guide",
+  "version": "1.5.0",
+  "description": "Mi guía de aprendisaje de Javascript. @susananzth",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/susananzth/javascript-guide.git"
+  },
+  "keywords": [
+    "Javscript",
+    "JS",
+    "Node",
+    "Node",
+    "JS"
+  ],
+  "author": "Susana Piñero Rodríguez",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/susananzth/javascript-guide/issues"
+  },
+  "homepage": "https://github.com/susananzth/javascript-guide#readme"
+}
