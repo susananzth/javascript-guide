@@ -24,16 +24,13 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#events">Eventos</a>
+                        <a class="nav-link js-scroll-trigger" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#array">Arreglos</a>
+                        <a class="nav-link js-scroll-trigger" href="#emailForm">Form email</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#dom">DOM y BOM</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#api">APIs</a>
+                        <a class="nav-link js-scroll-trigger" href="#twitterForm">Form twitter</a>
                     </li>
                 </ul>
             </div>
@@ -48,29 +45,45 @@
         </div>
     </header>
     <aside></aside>
-    <section id="ID">
+    <section id="sectionEmail">
         <div class="container py-5 bg-white">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <h2>TITLE</h2>
+                    <h2>Form email validation</h2>
                     <div class="platillos rounded border py-2 px-2 bg-light">
-                        <p>Causa</p>
-                        <p>Pizza</p>
-                        <p>Pasticho</p>
+                        <form id="emailForm">
+                            <div class="mb-3">
+                              <label for="email" class="form-label">Email address</label>
+                              <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                              <label for="password" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="password">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send</button>
+                          </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="ID">
+    <section id="sectionTwitter">
         <div class="container py-5 bg-white">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <h2>TITLE</h2>
+                    <h2>Form twitter validation</h2>
                     <div class="platillos rounded border py-2 px-2 bg-light">
-                        <p>Causa</p>
-                        <p>Pizza</p>
-                        <p>Pasticho</p>
+                        <form id="twitterForm">
+                            <div class="mb-3">
+                                <label for="twitter" class="form-label">Twitter</label>
+                                <input type="text" class="form-control" id="twitter" aria-describedby="twitterHelp">
+                              </div>
+                            <div class="mb-3">
+                              <label for="password2" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="password2">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send</button>
+                          </form>
                     </div>
                 </div>
             </div>
@@ -86,5 +99,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <!-- Mi JS -->
+    <script src="js/expresiones.js"></script>
 </body>
 </html>
